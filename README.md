@@ -1,28 +1,31 @@
 # ieee-buzzer-project
-# Push Button Controlled Buzzer using Arduino Uno
+# Push Button Controlled Buzzer Using Arduino Uno
+
+## Objective
+
+Create a circuit where the buzzer sounds only when the push button is pressed and stops immediately when released.
 
 ## Components Used
+
 - Arduino Uno
 - Push Button
 - Buzzer
 - 10kΩ Resistor
 - Jumper Wires
 
-## Circuit Description
-The buzzer turns ON only when the push button is pressed and turns OFF immediately when the button is released.
-
-## Connections
-### Buzzer
-- Positive Terminal → D8
-- Negative Terminal → GND
+## Circuit Connections
 
 ### Push Button
 - One terminal → 5V
-- Opposite terminal → D2
+- Other terminal → D2
 
 ### Resistor
-- One end → D2
-- Other end → GND
+- One terminal → D2
+- Other terminal → GND
+
+### Buzzer
+- Positive terminal → D8
+- Negative terminal → GND
 
 ## Arduino Code
 
