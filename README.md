@@ -1,9 +1,9 @@
 # ieee-buzzer-project
 # Push Button Controlled Buzzer Using Arduino Uno
 
-## Objective
+## Overview
 
-Create a circuit where the buzzer sounds only when the push button is pressed and stops immediately when released.
+This project demonstrates a simple Arduino-based circuit where a push button controls a buzzer. The buzzer remains OFF by default and sounds only while the button is pressed. Once the button is released, the buzzer stops immediately.
 
 ## Components Used
 
@@ -17,11 +17,11 @@ Create a circuit where the buzzer sounds only when the push button is pressed an
 
 ### Push Button
 - One terminal → 5V
-- Other terminal → D2
+- Opposite terminal → D2
 
 ### Resistor
-- One terminal → D2
-- Other terminal → GND
+- One end → D2
+- One end → GND
 
 ### Buzzer
 - Positive terminal → D8
@@ -45,6 +45,23 @@ void loop() {
     noTone(buzzerPin);
   }
 }
+```
+
 ## Wokwi Simulation
 
-[View Wokwi Project](https://wokwi.com/projects/479018379593620481)
+🔗 https://wokwi.com/projects/479018379593620481
+
+## Working
+
+The push button is connected using a pull-down resistor configuration. When the button is not pressed, pin D2 remains LOW through the resistor connected to GND, keeping the buzzer OFF.
+
+When the button is pressed, 5V is supplied to D2, making it HIGH. The Arduino detects this HIGH signal and activates the buzzer. As soon as the button is released, the signal becomes LOW and the buzzer turns OFF immediately.
+
+## Output
+
+- Button Pressed → Buzzer ON
+- Button Released → Buzzer OFF
+
+## Author
+
+Dhruv Bansal
