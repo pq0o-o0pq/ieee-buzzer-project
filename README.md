@@ -45,3 +45,6 @@ void loop() {
     noTone(buzzerPin);
   }
 }
+## Wokwi Simulation
+
+[View Wokwi Project](https://wokwi.com/projects/479018379593620481)
